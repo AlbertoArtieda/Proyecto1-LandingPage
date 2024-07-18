@@ -17,16 +17,13 @@ nav {
     background: #eeeeee;
     width: 100vw;
     padding: 10px;
-    position: sticky;
-    top: 0;
     font-size: 12px;
     display: flex;
     align-items: center;
-    overflow: hidden;
 }
 
 #btnLogo {
-    margin: 0px 30px;
+    margin: 0px 42px;
 }
 
 #links a {
@@ -36,10 +33,44 @@ nav {
 }
 
 #icons {
-    position: fixed;
+    position: absolute;
     right: 50px;
 }
 
 #icons a {
     margin: 0 20px;
+}
+
+/** ARTICLE **/
+
+#containerCLS {
+    width: 100vw;
+    height: 550px;
+    color: white;
+    overflow: hidden;
+}
+
+#imgMercedesCLS img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#txtCLS {
+    margin-top: 88px;
+    margin-left: 50px;
+}
+
+h1 {
+    font-family: 'Abhaya Libre';
+    font-weight: normal;
+    font-size: 70px;
+    margin: 0;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 0.6px;
 }

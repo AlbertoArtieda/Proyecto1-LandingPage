@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'ABeeZee';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/** HEADER **/
+
+nav {
+    background: #eeeeee;
+    width: 100vw;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#btnLogo {
+    margin: 0px 30px;
+}
+
+#links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#icons {
+    position: fixed;
+    right: 50px;
+}
+
+#icons a {
+    margin: 0 20px;
+}

@@ -1,62 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mercedes-Benz</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=ABeeZee"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Abhaya Libre"
-      rel="stylesheet"
-    />
-    <link href="styles.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="main.js"></script>
 
-    <link rel="icon" href="assets/mercedes-logo.png" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div id="btnLogo">
-          <a href="#"><img src="assets/mercedes-black.png" alt="" /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mercedes-Benz</title>
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Abhaya Libre" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="main.js"></script>
+
+  <link rel="icon" href="assets/mercedes-logo.png" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="btnLogo">
+        <a href="#"><img src="assets/mercedes-black.png" alt="" /></a>
+      </div>
+      <div id="links">
+        <a href="#electric">ELECTRIC</a>
+        <a href="#maybach">MAYBACH</a>
+        <a href="#accesories">ACCESORIES</a>
+        <a href="#stores">STORES</a>
+      </div>
+      <div id="icons">
+        <a href=""><img src="assets/logoLanguage.png" title="Select language" height="20" /></a>
+        <a href=""><img src="assets/logoUser.png" title="User" height="20" /></a>
+        <a href=""><img src="assets/logoShoppingCart.png" title="Cart" height="20" /></a>
+      </div>
+    </nav>
+  </header>
+  <article>
+    <section>
+      <div id="containerCLS">
+        <div id="txtCLS">
+          <h1>New Mercedes CLS</h1>
+          <p id="subtitle">The Power In Your Hands</p>
         </div>
-        <div id="links">
-          <a href="#electric">ELECTRIC</a>
-          <a href="#maybach">MAYBACH</a>
-          <a href="#accesories">ACCESORIES</a>
-          <a href="#stores">STORES</a>
-        </div>
-        <div id="icons">
-          <a href=""
-            ><img
-              src="assets/logoLanguage.png"
-              title="Select language"
-              height="20"
-          /></a>
-          <a href=""
-            ><img src="assets/logoUser.png" title="User" height="20"
-          /></a>
-          <a href=""
-            ><img src="assets/logoShoppingCart.png" title="Cart" height="20"
-          /></a>
-        </div>
-      </nav>
-    </header>
-    <article>
-      <section>
-        <div id="containerCLS">
-          <div id="imgMercedesCLS">
-            <img src="assets/imgMercedesCLS.jpeg" />
+      </div>
+    </section>
+    <section id="containerElectric">
+      <div class="grid" id="electric">
+        <div class="card">
+          <div class="carName">
+            <h3>Electric</h3>
+            <p id="carDetails">Mercedes E450 Cabriolet</p>
           </div>
-          <div id="txtCLS">
-            <h1>New Mercedes CLS</h1>
-            <p>The Power In Your Hands</p>
+          <div class="imgCar">
+            <img id="imgCabriolet" src="assets/imgBlackCabriolet.png" width="100%" />
+          </div class="containerButtons">
+          <div class="containerButtons">
+            <div class="btnMoreInfo">
+              <a href="">More info</a>
+            </div>
+            <div class="carColors" style="background: darkred;"
+              onclick="document.getElementById('imgCabriolet').src='assets/imgRedCabriolet.png';"></div>
+            <div class="carColors" style="background: darkblue;"
+              onclick="document.getElementById('imgCabriolet').src='assets/imgBlueCabriolet.png';"></div>
+            <div class="carColors" style="background: grey;"
+              onclick="document.getElementById('imgCabriolet').src='assets/imgGreyCabriolet.png';"></div>
+            <div class="carColors" style="background: black;"
+              onclick="document.getElementById('imgCabriolet').src='assets/imgBlackCabriolet.png';"></div>
           </div>
         </div>
-      </section>
-    </article>
-  </body>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="carName">
+            <h3>Hybrid</h3>
+            <p id="carDetails">Mercedes GLC SUV</p>
+          </div>
+          <div class="imgCar">
+            <img id="imgGLC" src="assets/imgBlackGLC.png" width="100%" />
+          </div>
+          <div class="containerButtons">
+            <div class="btnMoreInfo">
+              <a href="">More info</a>
+            </div>
+            <div class="carColors" style="background: darkred;"
+              onclick="document.getElementById('imgGLC').src='assets/imgRedGLC.png';"></div>
+            <div class="carColors" style="background: darkblue;"
+              onclick="document.getElementById('imgGLC').src='assets/imgBlueGLC.png';"></div>
+            <div class="carColors" style="background: black;"
+              onclick="document.getElementById('imgGLC').src='assets/imgBlackGLC.png';"></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="carName">
+            <h3>Hybrid</h3>
+            <p id="carDetails">Mercedes Benz G-Class</p>
+          </div>
+          <div class="imgCar">
+            <img id="imgGCLass" src="assets/imgBlackGClass.png" width="100%" />
+          </div>
+          <div class="containerButtons">
+            <div class="btnMoreInfo">
+              <a href="">More info</a>
+            </div>
+            <div class="carColors" style="background: white;"
+              onclick="document.getElementById('imgGCLass').src='assets/imgWhiteGClass.png';"></div>
+            <div class="carColors" style="background: darkblue;"
+              onclick="document.getElementById('imgGCLass').src='assets/imgBlueGClass.png';"></div>
+            <div class="carColors" style="background: grey;"
+              onclick="document.getElementById('imgGCLass').src='assets/imgGreyGClass.png';"></div>
+            <div class="carColors" style="background: black;"
+              onclick="document.getElementById('imgGCLass').src='assets/imgBLackGClass.png';"></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="carName">
+            <h3>Electric</h3>
+            <p id="carDetails">Mercedes EQB Suv</p>
+          </div>
+          <div class="imgCar">
+            <img id="imgEQB" src="assets/imgBlackEQB.png" width="100%" />
+          </div>
+          <div class="containerButtons">
+            <div class="btnMoreInfo">
+              <a href="">More info</a>
+            </div>
+            <div class="carColors" style="background: darkred;"
+              onclick="document.getElementById('imgEQB').src='assets/imgRedEQB.png';"></div>
+            <div class="carColors" style="background: white;"
+              onclick="document.getElementById('imgEQB').src='assets/imgWhiteEQB.png';"></div>
+            <div class="carColors" style="background: black;"
+              onclick="document.getElementById('imgEQB').src='assets/imgBlackEQB.png';"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</body>
+
 </html>
